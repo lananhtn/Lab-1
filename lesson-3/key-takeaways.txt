@@ -1,0 +1,46 @@
+I) Git
+1. Undo actions
+- Thay đổi commit massage:
+git  commit --amend 
++ i: vào chế độ insert 
++ esc: thoát chế đôj insert
++ :wq: write and quit 
+- Chuyển từ vùng Staging -> Working: 
+git restore --staged <ten_file>
+- Chuyển từ vùng Repo --> Working:
+git reset HEAD~1 (roll back số commit mới nhất)
+
+2. Branching model
+- Tạo nhánh mới: git btanch <ten_branch>
+- Chuyển đến nhánh: git checkout <ten_branch>
+- Tạo và chuyển đến nhánh đó: git checkout b <ten_branch>
+- Bỏ qua các file/ folder không cần git theo dõi
++ (1) Tạo file '.gitignore'
++ (2) Thêm tên file / folder vào file '.gitignore'
+
+II) Javascript basic
+1. Logical operator
+- Conventions:
++ snake_case: dùng gạch dưới
++ kebab-case: tên file
++ camelCase: tên biến
++ PascalCase: tên class
+
+2. Object and array
+* Object = Đối tượng:
+- Khai báo:
+let/const <ten_object> = {
+<thuoc_tinh>: <gia_tri>
+...
+}
+- Sử dụng:
++ console.log("name = " + <object>.<thuoc_tinh>);
++ console.log(“price = “,<object>[“<thuoc_tinh>”]);
+- Gán lại: 
++ user.age = 28
++ product[“manufacturer”][“year”] = 2025
+
+3. Logical operator
+- && : cả 2 vế của mệnh đề đều đúng
+- || : một trong 2 vế đúng
+- ! : đảo ngược lại giá trị của mệnh đề
